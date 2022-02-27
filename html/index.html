@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label>電力消費モデル</label>
+            <select name="demand">
+                <option value="night">夜間消費モデル</option>
+                <option value="evening">夕方消費モデル</option>
+                <option value="morning">朝夕消費モデル</option>
+            </select>
+        </div>
+        <div>
+            <lable for="monthly_payment">月平均電力量料金</lable>
+            <input type="number" min="1000" value="10000">円
+        </div>
+        <div>
+            <label>電力プラン</label>
+            <select name="rate_plan">
+                <option value="meter_rated">従量電灯B</option>
+                <option value="relax_night12">くつろぎナイト12</option>
+            </select>
+        </div>
+        <div>
+            <lable for="pv">太陽光発電</lable>
+            <input type="number" name="pv_size" min="0" max="10" value="3">kW
+        </div>
+        <div>
+            <lable for="battery">蓄電池</lable>
+            <input type="number" name="capacity" min="0" max="10" value="3" step="1">kWh
+        </div>
+        <input type="submit" value="実行">
+    </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.headline {
+	text-align: center;
+	display: block;
+	border: none;	
+}
+.detail {
+	text-align: center;
+	display: block;
+	border: none;
+}
+.block {
+	text-align: left;
+	display: inline-block;
+	border: 1px solid;
+	border-radius: 2%;
+}
+.info {
+	width:130px;
+	padding: 10px 2px;
+}
+.box {
+	width: 130px;
+	float: right;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 2px 1px;
+}
+th {
+	text-align: center;
+}
+.submit_button {
+	width: 265px;
+	text-align: center;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <h1 class="headline">シミュレーション</h1>
+  <form class="detail">
+    <table class="block">
+      <tr>
+        <th for="demand" class="info">電力消費パターン</th>
+          <td>
+            <select name="demand" id="demand" class="box" required>
+              <option value="" hidden>パターン選択</option>
+              <option value="1">朝夕消費プラン</option>
+              <option value="2">夕方消費プラン</option>
+              <option value="3">夜間消費プラン</option>
+            </select>
+          </td>
+      </tr>
+      <tr>
+        <th for="monthly_payment" class="info">電力量料金 (円)</th>
+          <td>
+            <input name="monthly_payment" id="monthly_payment" class="box" type="number" value="10000">
+          </td>
+      </tr>
+      <tr>
+        <th for="rate_plan" class="info">電力料金プラン</th>
+        <td>
+          <select name="rate_plan" id="rate_plan" class="box" required>
+            <option value="" hidden>プラン選択</option>
+            <option value="1">従量電灯</option>
+            <option value="2">くつろぎナイト12</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th for="pv_size" class="info">太陽光発電 (kW)</th>
+        <td>
+          <input name="pv_size" id="pv_size" class="box" type="number" max="10" min=0 value="5">
+        </td>
+      </tr>
+      <tr>
+    　  <th for="bt_gap" class="info">蓄電池 (kWh)</th>
+        <td>
+          <input name="bt_gap" id="bt_gap" class="box" type="number" max="40" min=0 value="20">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" name="submit" value="実行" class="submit_button"></td>
+      </tr>
+    </table><br>
+  </form>
+</body>
+</html>
